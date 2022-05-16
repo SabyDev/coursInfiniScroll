@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container>h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    margin-top: 50px;
+    color : red;
+}
+
+.text {
+    width: 500px; 
+    background: rgb(20, 33, 220);
+    padding: 20px;
+    margin: 40px 0;
+    border-radius: 10px;
+}
+
+.text h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 750;
+    color: rgb(255, 255, 0);
+}
+
+.text p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+    color: rgb(245, 239, 239);
+    font-size: 1.2rem;
+}
+
+.card {
+    position: relative;
+    width: 800px;
+    height: 250px;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.card h2 {
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 750;
+    color: rgb(255, 157, 0);
+}
+
+.card p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: justify;
+    color: rgb(0,0,0);
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.card img {
+    width: 200px;
+}
+/* Animation de chargement */
+.loading {
+    width: 150px;
+    height: 70px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: black;
+    margin: 0 10px;
+}
+
+.first {
+    animation: slide2 2s ease-in-out infinite;
+    animation-delay: .1s;
+    background-color: #f00;
+}
+
+.second {
+    animation: slide2 2s ease-in-out infinite;
+    animation-delay: .5s;
+    background-color: #0f0;
+}
+
+.third {
+    animation: slide2 2s ease-in-out infinite;
+    animation-delay: 1s;
+    background-color: #00f;
+}
+
+@keyframes slide2 {
+    0% {
+        transform: translateY(0) scale(.5);
+    }
+    50% {
+        transform: translateY(-30px) scale(1);
+    }
+    100% {
+        transform: translateY(0) scale(.5);
+    }
+}
+.cardStyle{
+    position: relative;
+    width: 800px;
+    height: 250px;   
+    padding: 20px;
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+.imgCard{
+  width: 100%;
+  height: 90%;
+    background-image: url(../img/257-300x200.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
